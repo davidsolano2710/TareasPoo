@@ -43,7 +43,12 @@ public class ListaEstudiante {
         listaEstudiantes.remove(pEstudiante);
         return true;
     }
-    //desplegarListaEstudiante
+    
+    public void desplegarListaEstudiante(){
+        for(Estudiante i : listaEstudiantes){
+            System.out.println(i.toString());
+        }
+    }
     
     
     
