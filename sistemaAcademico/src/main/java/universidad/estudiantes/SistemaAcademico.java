@@ -6,7 +6,7 @@ package universidad.estudiantes;
 
 /**
  *
- * @author elite
+ * @author David Solano Campos y Jose Emilio Alvarado
  */
 public class SistemaAcademico {
 

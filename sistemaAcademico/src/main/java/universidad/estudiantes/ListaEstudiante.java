@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author elite
+ * @author David Solano Campos y Jose Emilio Alvarado
  */
 public class ListaEstudiante {
     private List<Estudiante> listaEstudiantes;
