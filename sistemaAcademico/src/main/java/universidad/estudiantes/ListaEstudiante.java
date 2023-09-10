@@ -20,11 +20,12 @@ public class ListaEstudiante {
     public boolean agregarAListaEstudiante(Estudiante pEstudiante){
         int indice = buscarEstudiante(pEstudiante.getId());
         if (indice == -1){
-            return false;
+            listaEstudiantes.add(pEstudiante);
+            return true;
         }
-        listaEstudiantes.add(pEstudiante);
         
-        return true; 
+        
+        return false; 
     }
     
     public int buscarEstudiante(int pId){
@@ -40,6 +41,9 @@ public class ListaEstudiante {
     }
     
     public boolean eliminarDeLaListaEstudiante(Estudiante pEstudiante){
+        if(buscarEstudiante(pEstudiante.getId())== -1){
+            return false;
+        }
         listaEstudiantes.remove(pEstudiante);
         return true;
     }
