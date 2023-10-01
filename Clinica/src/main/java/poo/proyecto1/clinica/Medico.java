@@ -23,7 +23,8 @@ public class Medico {private String nombre;
     private String direccion;
     private Date nacimiento;
     private int costoCita;
-    
+    private int [][] horario;
+    private int eec;
     
     public void Paciente(){};
     
@@ -98,6 +99,49 @@ public class Medico {private String nombre;
     public String getNacimiento(){
         SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
         return formato.format(nacimiento);
+    }
+    
+    public void setCostoCita(int pCosto){
+        costoCita = pCosto;
+    }
+    
+    public int getCostoCita(){
+        return costoCita;
+    }
+    
+    public void setHorarioMedico(int p1,int p21,int p2,int p22,int p3,int p23,
+                                 int p4,int p24,int p5,int p25,int p6,int p26,
+                                 int p7,int p27){
+        
+        
+        horario = new int[7][2];
+        
+        horario[0][0]=p1;
+        horario[0][1]=p21;
+        horario[1][0]=p2;
+        horario[1][1]=p22;
+        horario[2][0]=p3;
+        horario[2][1]=p23;
+        horario[3][0]=p4;
+        horario[3][1]=p24;
+        horario[4][0]=p5;
+        horario[4][1]=p25;
+        horario[5][0]=p6;
+        horario[5][1]=p26;
+        horario[6][0]=p7;
+        horario[6][1]=p27;
+    }
+    
+    public int[][] getHorarioMedico(){
+        return horario;
+    }
+    
+    public void setEEC(int pEec){
+        eec = pEec;
+    }
+    
+    public int getEEC(){
+        return eec;
     }
     
 }

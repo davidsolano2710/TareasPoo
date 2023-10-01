@@ -4,11 +4,15 @@
  */
 package poo.proyecto1.clinica;
 import java.util.Date;
+import java.util.ArrayList;
 
 /**
  *
  * @author elite
  */
 public class Cita {
+    private ArrayList<Paciente> listaPacientes;
+    private ArrayList<Medico> listaMedico;
     
+        
 }

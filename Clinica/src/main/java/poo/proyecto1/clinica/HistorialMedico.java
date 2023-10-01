@@ -4,10 +4,18 @@
  */
 package poo.proyecto1.clinica;
 
+import java.util.Date;
+
 /**
  *
  * @author elite
  */
 public class HistorialMedico {
+    
+    private Date fecha;
+    private Medico doc;
+    private String diagnostico;
+    private String medicamentos;
+    
     
 }
