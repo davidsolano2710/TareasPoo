@@ -4,19 +4,16 @@
 
 package poo.proyecto1.clinica;
 
+import java.util.ArrayList;
+
 
 /**
  *
  * @author elite
  */
 public class Clinica {
+    private ArrayList<Paciente> listaPacientes;
+    private ArrayList<Medico> listaMedico;
     
-    
-    
-    
-
-    public static void main(String[] args) {
-        InputFrame myFrame = new InputFrame();
-    }
 }
 
