@@ -24,7 +24,9 @@ public class Medico {private String nombre;
     private Date nacimiento;
     private int costoCita;
     private int [][] horario;
-    private int eec;
+    //private int eec;
+    //agregar lista de especialidades
+    
     
     public void Paciente(){};
     
@@ -135,7 +137,7 @@ public class Medico {private String nombre;
     public int[][] getHorarioMedico(){
         return horario;
     }
-    
+    /*
     public void setEEC(int pEec){
         eec = pEec;
     }
@@ -143,5 +145,5 @@ public class Medico {private String nombre;
     public int getEEC(){
         return eec;
     }
-    
+    */
 }
